@@ -1,0 +1,242 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+
+.mainlist{
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    left: 50%;
+    bottom: 10%;
+    transform: translateX(-50%);
+    
+}
+.mainlist a{
+    text-decoration: none;
+    
+}
+.mainlist ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    
+}
+.mainlist ul li{
+    margin: 10px;
+    background-color: rgba(2, 2, 94, 0.76);
+    color: white;
+    padding: 10px;
+    border-radius: 10%;
+    font-size: larger;
+    border: 1px solid black;
+    cursor: pointer;
+    -webkit-box-shadow: 5px 9px 18px 0px rgba(245,196,245,1);
+-moz-box-shadow: 5px 9px 18px 0px rgba(245,196,245,1);
+box-shadow: 5px 9px 18px 0px rgba(245,196,245,1);
+
+    
+}
+.mainlist ul li:hover{
+    border: 1px solid yellow;
+    color: yellow;
+}
+.mainlist ul li:focus{
+    border: 1px solid yellow;
+    color: yellow;
+}
+.firstmain{
+    height: 100vh;
+    background-image: url(firstmain.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;    
+}
+.firstmaincontent{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    color: white;
+    transform: translateX(-50%) translateY(-50%);
+    
+}
+.firstmaincontent #one{
+    font-size: 50px;
+}
+.firstmaincontent #two{
+    font-size: 100px;
+}
+
+.secondmain{
+    background:  black;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-self: start;
+    align-content: center;
+    padding: 10px;
+    height: 100vh;
+
+}
+.secondmain .imgsection{
+    text-align: center;
+}
+.secondmain .imgsection img{
+    width: 50%;
+    border-radius: 10px;
+}
+.secondmain .textsection{
+    color: white;
+    height: 100%;
+    align-content: center;
+    padding-bottom: 20px;
+}
+.secondmain .textsection p{
+    font-size: larger;
+}
+.secondmain .textsection i{
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+}
+.secondmain .textsection .myresumedownload{
+    text-decoration: none;
+    color: white;
+    background-color: rgb(75, 75, 230);
+    padding: 10px;
+    border-radius: 10px;
+    font-size: larger;
+}
+.secondmain .textsection h2{
+    font-size: 40px;
+}
+
+.thirdmain{
+    background-color: rgb(10, 1, 39);
+    color: white;
+    display: flex;
+    height: 100vh;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 40px;
+}
+.thirdmain .education{
+    width: 45%;
+    font-size: larger;
+}
+.thirdmain .education h2{
+    text-align: center;
+    padding-top: 40px;
+}
+.subeducation{
+    padding-left: 5%;
+}
+.subeducation h3{
+    color: orange;
+}
+.thirdmain hr{
+    height: 100vh;
+    width: 10%;
+}
+.thirdmain .skills{
+    width: 45%;
+    font-size: larger;
+    padding-left: 20px;
+}
+.thirdmain .skills h2{
+    font-size: 30px;
+    text-align: center;
+}
+.thirdmain .skills h3{
+    color: orange;
+}
+
+.thirdmain .skills img{
+    width: 40px;
+    border-radius: 10px;
+    border: 1px solid white;
+    max-height: 50px;
+}
+.thirdmain .skills .mernlogos{
+    display: flex;
+ line-height: 50px;
+ align-items: center;
+}
+.fourthmain{
+    height: fit-content;
+    padding: 30px;
+    background-color: black;
+    color: white;
+    font-size: larger;
+}
+.fourthmain h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.company img{
+    border-radius: 20px;
+}
+/* .fourthmain table{
+    border-collapse: collapse;
+    border-color: white;
+    font-size: larger;
+    border-radius: 10px;
+}
+.fourthmain table thead{
+    background: blue;
+}
+.fourthmain table img{
+    max-width: 80%;
+    border-radius: 20px;
+}
+.fourthmain table td,th{
+    padding: 10px;
+} */
+
+@media screen and (max-width:800px){
+    .firstmaincontent #one{
+        font-size: larger;
+    }
+    .firstmaincontent #two{
+        font-size: 50px;
+    }
+        
+    .mainlist ul li{
+        font-size: medium;
+        margin: 5px;
+        padding: 0px;
+    }
+
+    .secondmain{
+        grid-template-columns: 1fr;
+    }
+    .secondmain .textsection{
+        padding: 20px;
+    }
+    .thirdmain{
+        display: block;
+        height: fit-content;
+        
+    }
+    .thirdmain hr{
+        width: 100%;
+        height: 0px;
+        display: block;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    .thirdmain .education{
+        width: 100%;
+    }
+    .thirdmain .skills{
+        width: 100%;
+    }
+    /* .fourthmain table{
+        width: 100%;
+        overflow: scroll;
+    } */
+    
+}
